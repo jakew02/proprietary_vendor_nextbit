@@ -41,17 +41,6 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libril
-LOCAL_MODULE_OWNER := nextbit
-LOCAL_SRC_FILES_64 := proprietary/lib64/libril.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libril.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libqmiservices
 LOCAL_MODULE_OWNER := nextbit
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libqmiservices.so
