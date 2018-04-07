@@ -18,7 +18,6 @@
 PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/nextbit/ether/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/nextbit/ether/proprietary/bin/cnd:system/bin/cnd \
     vendor/nextbit/ether/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/nextbit/ether/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/nextbit/ether/proprietary/bin/dpmd:system/bin/dpmd \
@@ -44,8 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/nextbit/ether/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/nextbit/ether/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
-    vendor/nextbit/ether/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
-    vendor/nextbit/ether/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/nextbit/ether/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/nextbit/ether/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/nextbit/ether/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
@@ -113,7 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/nxp/settings/os/playback/4/devkit_Release.parms:system/etc/nxp/settings/os/playback/4/devkit_Release.parms \
     vendor/nextbit/ether/proprietary/etc/nxp/settings/os/playback/4/speaker.speaker:system/etc/nxp/settings/os/playback/4/speaker.speaker \
     vendor/nextbit/ether/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
-    vendor/nextbit/ether/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
@@ -131,9 +127,9 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf \
     vendor/nextbit/ether/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/nextbit/ether/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/nextbit/ether/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/nextbit/ether/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/nextbit/ether/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
+    vendor/nextbit/ether/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/nextbit/ether/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/nextbit/ether/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/nextbit/ether/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
@@ -167,6 +163,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/nextbit/ether/proprietary/lib64/libtfa98xx.so:system/lib64/libtfa98xx.so \
     vendor/nextbit/ether/proprietary/lib64/libtfa98xx_hal.so:system/lib64/libtfa98xx_hal.so \
+    vendor/nextbit/ether/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
     vendor/nextbit/ether/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/nextbit/ether/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nextbit/ether/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
@@ -651,7 +648,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libtar.so:system/vendor/lib/libtar.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libwfdavenhancements.so:system/vendor/lib/libwfdavenhancements.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
@@ -668,9 +664,9 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libwfduibcsinkinterface.so:system/vendor/lib/libwfduibcsinkinterface.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libwfduibcsrc.so:system/vendor/lib/libwfduibcsrc.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libwfduibcsrcinterface.so:system/vendor/lib/libwfduibcsrcinterface.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
@@ -881,7 +877,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwfdavenhancements.so:system/vendor/lib64/libwfdavenhancements.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwfdcommonutils.so:system/vendor/lib64/libwfdcommonutils.so \
@@ -898,8 +893,8 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwfduibcsinkinterface.so:system/vendor/lib64/libwfduibcsinkinterface.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwfduibcsrc.so:system/vendor/lib64/libwfduibcsrc.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwfduibcsrcinterface.so:system/vendor/lib64/libwfduibcsrcinterface.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
@@ -911,6 +906,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
+    com.quicinc.cne.api@1.0 \
+    com.quicinc.cne.constants@1.0 \
+    com.quicinc.cne.constants@2.0 \
+    com.quicinc.cne.server@1.0 \
+    com.quicinc.cne.server@2.0 \
     libqmiservices \
     libthermalclient \
     libtime_genoff \
@@ -918,7 +918,6 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     fastdormancy \
     shutdownlistener \
-    CNEService \
     QtiTetherService \
     com.qualcomm.location \
     dpmserviceapp \
