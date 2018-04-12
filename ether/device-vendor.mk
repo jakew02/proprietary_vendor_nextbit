@@ -17,9 +17,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/adsprpcd:system/bin/adsprpcd \
-    vendor/nextbit/ether/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/nextbit/ether/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
-    vendor/nextbit/ether/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/nextbit/ether/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/nextbit/ether/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/nextbit/ether/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
@@ -27,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/nextbit/ether/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/nextbit/ether/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/nextbit/ether/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/nextbit/ether/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nextbit/ether/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/nextbit/ether/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
@@ -120,7 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml \
     vendor/nextbit/ether/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/nextbit/ether/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
+    vendor/nextbit/ether/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_EVT1C_qcomdev.conf \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_fih_def_nbq_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_qcomdev.conf \
