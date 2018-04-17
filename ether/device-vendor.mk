@@ -132,7 +132,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/nextbit/ether/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/nextbit/ether/proprietary/lib/hw/camera.msm8992.so:system/lib/hw/camera.msm8992.so \
-    vendor/nextbit/ether/proprietary/lib/hw/fingerprint.msm8992.so:system/lib/hw/fingerprint.msm8992.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/hw/fingerprint.vendor.msm8992.so:system/vendor/lib/hw/fingerprint.vendor.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/nextbit/ether/proprietary/lib/hw/sensors.msm8992.so:system/lib/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib/libFIHNxp.so:system/lib/libFIHNxp.so \
@@ -149,7 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/nextbit/ether/proprietary/lib/libtfa98xx.so:system/lib/libtfa98xx.so \
     vendor/nextbit/ether/proprietary/lib/libtfa98xx_hal.so:system/lib/libtfa98xx_hal.so \
-    vendor/nextbit/ether/proprietary/lib64/hw/fingerprint.msm8992.so:system/lib64/hw/fingerprint.msm8992.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/hw/fingerprint.vendor.msm8992.so:system/vendor/lib64/hw/fingerprint.vendor.msm8992.so \
     vendor/nextbit/ether/proprietary/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     vendor/nextbit/ether/proprietary/lib64/hw/sensors.msm8992.so:system/lib64/hw/sensors.msm8992.so \
     vendor/nextbit/ether/proprietary/lib64/libFIHNxp.so:system/lib64/libFIHNxp.so \
