@@ -21,10 +21,10 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/nextbit/ether/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/nextbit/ether/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/nextbit/ether/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-    vendor/nextbit/ether/proprietary/bin/imscmservice:system/bin/imscmservice \
-    vendor/nextbit/ether/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
-    vendor/nextbit/ether/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    vendor/nextbit/ether/proprietary/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
+    vendor/nextbit/ether/proprietary/bin/imscmservice:system/vendor/bin/imscmservice \
+    vendor/nextbit/ether/proprietary/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
+    vendor/nextbit/ether/proprietary/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
     vendor/nextbit/ether/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nextbit/ether/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/nextbit/ether/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
@@ -123,7 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/etc/sensors/sensor_fih_def_nbq_qcomdev.conf:system/etc/sensors/sensor_fih_def_nbq_qcomdev.conf \
     vendor/nextbit/ether/proprietary/etc/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf \
     vendor/nextbit/ether/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-    vendor/nextbit/ether/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nextbit/ether/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/nextbit/ether/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nextbit/ether/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
@@ -228,7 +227,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libQBLAS-0.11.38.so:system/vendor/lib/libQBLAS-0.11.38.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-    vendor/nextbit/ether/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:system/vendor/lib/libSonyIMX230PdafLibrary.so \
@@ -733,7 +731,6 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libQBLAS-0.11.38.so:system/vendor/lib64/libQBLAS-0.11.38.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libStDrvInt.so:system/vendor/lib64/libStDrvInt.so \
@@ -896,28 +893,102 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
-    vendor/nextbit/ether/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/nextbit/ether/proprietary/vendor/qcril.db:system/vendor/qcril.db \
+    vendor/nextbit/ether/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/lib-imsvtextutils.so:system/vendor/lib64/lib-imsvtextutils.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/lib-imsvtutils.so:system/vendor/lib64/lib-imsvtutils.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/lib-imsvideocodec.so:system/vendor/lib64/lib-imsvideocodec.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/lib-uceservice.so:system/vendor/lib64/lib-uceservice.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imscmservice.so:system/vendor/lib/lib-imscmservice.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imsvtextutils.so:system/vendor/lib/lib-imsvtextutils.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imsvtutils.so:system/vendor/lib/lib-imsvtutils.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-imsvideocodec.so:system/vendor/lib/lib-imsvideocodec.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/lib-uceservice.so:system/vendor/lib/lib-uceservice.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
+    vendor/nextbit/ether/proprietary/vendor/bin/imsrcsd:system/vendor/bin/imsrcsd \
+    vendor/nextbit/ether/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/nextbit/ether/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/nextbit/ether/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
+    vendor/nextbit/ether/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/nextbit/ether/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/nextbit/ether/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
+    vendor/nextbit/ether/proprietary/vendor/bin/dpmQmiMgr:system/vendor/bin/dpmQmiMgr \
+    vendor/nextbit/ether/proprietary/vendor/lib/libdiag_system.so:system/vendor/lib/libdiag_system.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libdiag_system.so:system/vendor/lib64/libdiag_system.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/libqdMetaData.system.so:system/vendor/lib64/libqdMetaData.system.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/libqdMetaData.system.so:system/vendor/lib/libqdMetaData.system.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:system/vendor/lib64/com.quicinc.cne.api@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:system/vendor/lib/com.quicinc.cne.constants@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:system/vendor/lib64/com.quicinc.cne.constants@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:system/vendor/lib/com.quicinc.cne.constants@2.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:system/vendor/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/com.quicinc.cne.server@1.0.so:system/vendor/lib/com.quicinc.cne.server@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/com.quicinc.cne.server@1.0.so:system/vendor/lib64/com.quicinc.cne.server@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/com.quicinc.cne.server@2.0.so:system/vendor/lib/com.quicinc.cne.server@2.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/com.quicinc.cne.server@2.0.so:system/vendor/lib64/com.quicinc.cne.server@2.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.uim@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:system/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so \
+    vendor/nextbit/ether/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so \
+
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
-    com.quicinc.cne.api@1.0 \
-    com.quicinc.cne.constants@1.0 \
-    com.quicinc.cne.constants@2.0 \
-    com.quicinc.cne.server@1.0 \
-    com.quicinc.cne.server@2.0 \
     libqmiservices \
     libthermalclient \
     libtime_genoff \
     TimeService \
-    datastatusnotification \
     fastdormancy \
     shutdownlistener \
-    QtiTetherService \
     com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     ims \
     imssettings \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    CNEService \
+    QtiTelephonyService \
+    QtiTelephonyServicelibrary
+
+
+# PRODUCT_PACKAGES += \
+#    dpmserviceapp \
+#    datastatusnotification \
