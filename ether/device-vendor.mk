@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/nextbit/ether/proprietary/vendor/lib/libFIHNxp.so:system/vendor/lib/libFIHNxp.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libtfa98xx.so:system/vendor/lib/libtfa98xx.so \
     vendor/nextbit/ether/proprietary/vendor/lib/libtfa98xx_hal.so:system/vendor/lib/libtfa98xx_hal.so \
-    vendor/nextbit/ether/proprietary/vendor/lib64/hw/fingerprint.msm8992.so:system/vendor/lib64/hw/fingerprint.msm8992.so \
+    vendor/nextbit/ether/proprietary/vendor/lib64/hw/fingerprint.vendor.msm8992.so:system/vendor/lib64/hw/fingerprint.vendor.msm8992.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libFIHNxp.so:system/vendor/lib64/libFIHNxp.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/lib_fpc_tac_shared.so:system/vendor/lib64/lib_fpc_tac_shared.so \
     vendor/nextbit/ether/proprietary/vendor/lib64/libtfa98xx.so:system/vendor/lib64/libtfa98xx.so \
